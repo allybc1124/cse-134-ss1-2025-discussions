@@ -27,3 +27,25 @@ import "../styles/global.css";
         </main>
 	</body>
 </html>
+
+
+---
+    import Navigation from "../components/Navigation.astro";
+    import BaseLayout from ".."
+    import "../styles/global.css";
+---
+    
+
+    <BaseLayout>
+    <header>
+            <h1>Blog Posts</h1>
+            <Navigation />
+        </header>
+        <main>
+            <p>Here are some of my blogs...</p>
+            <ul>
+                <li><a href="/blogs/blog1">Blog 1</a></li>
+                <li><a href="/blogs/blog2">Blog 2</a></li>
+            </ul>
+        </main>
+    </BaseLayout>

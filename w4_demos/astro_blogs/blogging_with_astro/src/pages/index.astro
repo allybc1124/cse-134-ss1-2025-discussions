@@ -24,3 +24,23 @@ import "../styles/global.css";
         </main>
 	</body>
 </html>
+
+
+---
+    import Navigation from "../components/Navigation.astro";
+    import BaseLayout from ".."
+    import "../styles/global.css";
+
+    import { pageTitle } = Astro.props;
+---
+    
+
+    <BaseLayout pageTitle>
+        <header>
+            <h2>Home Page</h2>
+            <Navigation />
+        </header>
+        <main>
+		    <p>Welcome to My First Astro Site...</p>
+        </main>
+    </BaseLayout>

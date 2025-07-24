@@ -30,6 +30,12 @@ const hobbyColor = "coral";
     <main>
         <p>Hi, I am {bio.firstName+" "+bio.lastName}! I currently located in {bio.location}, studying {bio.course} at {bio.school}.</p>
         <!-- TODO 7: Display a list of hobbies only if the hobbies array is non-empty  -->
+
+        {bio.hobies.length() > 0 && (
+          <p> In my free time, I love <p>
+          <ul>
+            {bio.hobbies.map((hobby) => {return <li>{hobbby}</li>})}
+        )}
     </main>
   </body>
 </html>
